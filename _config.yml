@@ -1,0 +1,57 @@
+title: Digital Services Engagement Guide
+description: The Digital Services Engagement Guide is a resource for bringing together city staff to tackle large-scale innovation.
+email: innovationfellows@austintexas.gov
+timezone: UTC
+collections:
+  words:
+    title: Words
+    output: true
+    permalink: "/:path/"
+
+defaults:
+- scope:
+    path: ''
+  values:
+    layout: sidebar-page
+- scope:
+    path: 'example-folder'
+  values:
+    layout: sidebar-page
+- scope:
+    path: ''
+    type: words
+  values:
+    layout: sidebar-page
+
+baseurl: https://cityofaustin.github.io/digital-services-engagement-guide
+url: https://cityofaustin.github.io/digital-services-engagement-guide/
+twitter:
+  username: civiqueso
+zilker_theme: dark
+markdown: kramdown
+gems:
+- jekyll-seo-tag
+- jekyll-sitemap
+- jekyll-redirect-from
+webrick:
+  headers:
+    Access-Control-Allow-Origin: "*"
+sass:
+  sass_dir: assets/stylesheets/
+permalink: pretty
+exclude:
+- node_modules
+- gulpfile.js
+- Gemfile
+- Gemfile.lock
+- npm-debug.log
+- "/screenshots"
+- "/assets/stylesheets/bourbon"
+- "/assets/stylesheets/bourbon-neat"
+- "/assets/uswds/stylesheets"
+- "/assets/uswds/js"
+- ".bundle"
+- "/vendor"
+- _bourbon
+- _bourbon-neat
+- _uswds
